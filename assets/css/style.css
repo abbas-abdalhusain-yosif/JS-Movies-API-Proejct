@@ -1,0 +1,77 @@
+/* (((((    GENERAL    ))))) */
+:root
+{
+    --bg:rgb(10,10,50);
+    --bg-button-normal-1:rgb(10,10,80);
+    --border-input:rgb(20,20,255);
+}
+.button
+{
+    border-radius: 5px;
+    border: none;
+}
+input
+{
+    border: none;
+    box-shadow: 0px 0px 10px -3px var(--border-input);
+    outline: none;
+    border-radius: 5px;
+    color: var(--border-input);
+
+}
+/* (((((    BODY    ))))) */
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    transition: all 0.2s ease;
+}
+/* (((((    HEADER    ))))) */
+.header
+{
+width: 100vw;
+}
+.search-box
+{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.search-box .search-input
+{
+    display: none;
+    flex-grow: 1;
+    width: 100%;
+}
+.search-box .search-input *
+{
+    margin: 0px 10px;
+}
+.search-box .search-input input[type="text"]
+{
+flex-grow: 1;
+background-color: transparent;
+}
+.search-box .search-input button
+{
+background-color: var(--bg-button-normal-1);
+display: inline-block;
+width: 50px;
+height: 50px;
+line-height: 40px;
+}
+.search-box .search-input input[type="text"]:is(:focus , :hover) 
+{
+box-shadow: 0px 0px 5px 0px var(--border-input);
+border: none;
+}
+.search-button button
+{
+    background-color: var(--bg-button-normal-1);
+display: inline-block;
+width: 50px;
+height: 50px;
+line-height: 40px;
+}
